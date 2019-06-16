@@ -1,0 +1,18 @@
+﻿@page
+@model inzynieria.Pages.ErrorReportModel
+@{
+    ViewData["Title"] = "Zgłoś Błąd";
+}
+
+<h2>Zgłoś błąd</h2>
+<div class="container">
+        <div class="form-group">
+            <input placeholder="Podaj swojego maila..." type="email" required/>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Opisz błąd..." rows="10" cols="90" required></textarea>
+        </div>
+        <a class="btn btn-primary" asp-page="/MaillSuccesfull">Prześlij</a>
+</div>
+
+

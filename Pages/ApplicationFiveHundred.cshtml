@@ -1,0 +1,58 @@
+﻿@page
+@model inzynieria.Pages.ApplicationFiveHundredModel
+@{
+    ViewData["Title"] = "wniosek 500+";
+}
+
+<h2>Wniosek 500+</h2>
+<div class="container">
+    <form method="post">
+        <div class="col-md-10">
+            <div class="form-inline">
+                <div class="col-md-2">
+                    <label class="control-label" for="firstname">Imię</label>
+                </div>
+                <div class="col-md-10">
+                    <input name="firstname" class="form-control" type="text" placeholder="Podaj imię..." />
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="col-md-2">
+                    <label class="control-label" for="lastname">Nazwisko</label>
+                </div>
+                <div class="col-md-10">
+                    <input name="lastname" class="form-control" type="text" placeholder="Podaj nazwisko..." />
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="col-md-2">
+                    <label class="control-label" for="childFirstName">Imię dziecka</label>
+                </div>
+                <div class="col-md-10">
+                    <input name="childFirstName" class="form-control" type="text" placeholder="Podaj imię dziecka..." />
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="col-md-2">
+                    <label class="control-label" for="childLastName">Nazwisko dziecka</label>
+                </div>
+                <div class="col-md-10">
+                    <input name="childLastName" class="form-control" type="text" placeholder="Podaj nazwisko dziecka..." />
+                </div>
+            </div>
+            <div class="form-inline">
+                <div class="col-md-2">
+                    <label class="control-label" for="telephone">Numer telefonu</label>
+                </div>
+                <div class="col-md-10">
+                    <input name="telephone" class="form-control" type="tel" placeholder="Numer telefonu" />
+                </div>
+            </div>
+            @*<div class="form-inline">
+            <input class="btn btn-primary" type="submit" value="Generuj" />
+        </div>*@
+            <a class="btn btn-primary" asp-page="/ApplicationSuccess">Generuj</a>
+        </div>     
+</form>
+</div>
+
